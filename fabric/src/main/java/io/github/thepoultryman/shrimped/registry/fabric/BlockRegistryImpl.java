@@ -1,6 +1,5 @@
 package io.github.thepoultryman.shrimped.registry.fabric;
 
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
