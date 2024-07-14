@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "shrimped",
+  "version": "${version}",
+
+  "name": "Shrimped",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "GNU LGPL 3.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.thepoultryman.shrimped.fabric.ShrimpedFabric"
+    ]
+  },
+  "mixins": [
+    "shrimped-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21"
+  }
+}
