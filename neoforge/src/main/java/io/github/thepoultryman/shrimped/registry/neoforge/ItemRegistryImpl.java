@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public class ItemRegistryImpl {
     public static final DeferredRegister<Item> ITEM_REGISTRY = DeferredRegister.createItems(Shrimped.MOD_ID);
 
-    public static void register(String id, Supplier<Item> itemSupplier) {
+    public static <T extends Item> void register(String id, Supplier<T> itemSupplier) {
         ITEM_REGISTRY.register(id, itemSupplier);
     }
 }

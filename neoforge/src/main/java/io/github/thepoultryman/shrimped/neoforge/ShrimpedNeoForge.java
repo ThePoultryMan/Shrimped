@@ -9,8 +9,8 @@ import net.neoforged.fml.common.Mod;
 @Mod(Shrimped.MOD_ID)
 public class ShrimpedNeoForge {
     public ShrimpedNeoForge(IEventBus eventBus) {
-        ItemRegistryImpl.ITEM_REGISTRY.register(eventBus);
         BlockRegistryImpl.BLOCK_REGISTRY.register(eventBus);
+        ItemRegistryImpl.ITEM_REGISTRY.register(eventBus);
 
         Shrimped.init();
     }

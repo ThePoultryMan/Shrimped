@@ -9,7 +9,7 @@ public class ItemRegistry {
     public static void registerItems() {}
 
     @ExpectPlatform
-    public static void register(String id, Supplier<Item> itemSupplier) {
+    public static <T extends Item> void register(String id, Supplier<T> itemSupplier) {
         throw new RuntimeException("This should never happen. Please report this.");
     }
 }
