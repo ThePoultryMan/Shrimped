@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "blocks",
+    "pattern": [
+        "I",
+        "G",
+        "S"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "G": {
+            "tag": "shrimped:tank_glasses"
+        },
+        "S": {
+            "item": "minecraft:stone_slab"
+        }
+    },
+    "result": {
+        "id": "shrimped:tank"
+    }
+}
