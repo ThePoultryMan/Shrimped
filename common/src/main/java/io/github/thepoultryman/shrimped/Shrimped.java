@@ -1,6 +1,7 @@
 package io.github.thepoultryman.shrimped;
 
 import io.github.thepoultryman.shrimped.registry.BlockRegistry;
+import io.github.thepoultryman.shrimped.registry.ItemRegistry;
 
 public class Shrimped
 {
@@ -8,5 +9,6 @@ public class Shrimped
 
 	public static void init() {
 		BlockRegistry.registerBlocks();
+		ItemRegistry.registerItems();
 	}
 }
