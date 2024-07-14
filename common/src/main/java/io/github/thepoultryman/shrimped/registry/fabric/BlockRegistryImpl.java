@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Block;
 import java.util.function.Supplier;
 
 public class BlockRegistryImpl {
-    private static void register(String id, Supplier<Block> blockSupplier) {
+    public static void register(String id, Supplier<Block> blockSupplier) {
     }
 }

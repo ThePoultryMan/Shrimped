@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public class BlockRegistryImpl {
     public static final DeferredRegister<Block> BLOCK_REGISTRY = DeferredRegister.createBlocks(Shrimped.MOD_ID);
 
-    private static void register(String id, Supplier<Block> blockSupplier) {
+    public static void register(String id, Supplier<Block> blockSupplier) {
         BLOCK_REGISTRY.register(id, blockSupplier);
     }
 }
