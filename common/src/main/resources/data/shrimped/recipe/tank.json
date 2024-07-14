@@ -4,7 +4,7 @@
     "pattern": [
         "I",
         "G",
-        "S"
+        "I"
     ],
     "key": {
         "I": {
@@ -12,9 +12,6 @@
         },
         "G": {
             "tag": "shrimped:tank_glasses"
-        },
-        "S": {
-            "item": "minecraft:stone_slab"
         }
     },
     "result": {
