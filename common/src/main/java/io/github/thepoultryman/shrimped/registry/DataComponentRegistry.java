@@ -27,6 +27,8 @@ public class DataComponentRegistry {
             .networkSynchronized(DataComponentRegistry.SHRIMP_BIN_COUNT_STREAM_CODEC)
             .build());
 
+    public static void registerDataComponents() {}
+
     @ExpectPlatform
     public static <T> Supplier<DataComponentType<T>> register(String name, Supplier<DataComponentType<T>> builderSupplier) {
         throw new RuntimeException("This should not happen. Please report this.");
