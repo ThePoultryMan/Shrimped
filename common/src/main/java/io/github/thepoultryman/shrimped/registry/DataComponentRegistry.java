@@ -20,10 +20,15 @@ public class DataComponentRegistry {
             ByteBufCodecs.INT, ShrimpBinCount::count,
             ShrimpBinCount::new
     );
-    public static final Supplier<DataComponentType<?>> SHRIMP_BIN_COUNT_COMPONENT = register("shrimp_bin_count");
+    public static final Supplier<DataComponentType<ShrimpBinCount>> SHRIMP_BIN_COUNT_COMPONENT = register(
+            "shrimp_bin_count",
+            () -> DataComponentType.<DataComponentRegistry.ShrimpBinCount>builder()
+            .persistent(DataComponentRegistry.SHRIMP_BIN_COUNT_CODEC)
+            .networkSynchronized(DataComponentRegistry.SHRIMP_BIN_COUNT_STREAM_CODEC)
+            .build());
 
     @ExpectPlatform
-    public static Supplier<DataComponentType<?>> register(String name) {
+    public static <T> Supplier<DataComponentType<T>> register(String name, Supplier<DataComponentType<T>> builderSupplier) {
         throw new RuntimeException("This should not happen. Please report this.");
     }
 
