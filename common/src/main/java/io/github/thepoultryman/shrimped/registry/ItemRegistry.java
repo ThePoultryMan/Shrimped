@@ -10,6 +10,7 @@ public class ItemRegistry {
     public static final DeferredRegister<Item> ITEM_REGISTRY = DeferredRegister.create(Shrimped.MOD_ID, Registries.ITEM);
 
     public static void registerItems() {
+        ITEM_REGISTRY.register();
         ITEM_REGISTRY.register("shrimp_bin", ShrimpBin::new);
     }
 }

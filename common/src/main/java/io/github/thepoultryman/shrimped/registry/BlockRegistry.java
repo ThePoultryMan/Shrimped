@@ -15,6 +15,7 @@ public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCK_REGISTER = DeferredRegister.create(Shrimped.MOD_ID, Registries.BLOCK);
 
     public static void registerBlocks() {
+        BLOCK_REGISTER.register();
         register("tank", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)), new Item.Properties());
     }
 

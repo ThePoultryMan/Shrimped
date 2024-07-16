@@ -32,7 +32,9 @@ public class DataComponentRegistry {
             .networkSynchronized(DataComponentRegistry.SHRIMP_BIN_COUNT_STREAM_CODEC)
             .build());
 
-    public static void registerDataComponents() {}
+    public static void registerDataComponents() {
+        DATA_COMPONENT_REGISTER.register();
+    }
 
     public static <T> RegistrySupplier<DataComponentType<T>> register(String name, Supplier<DataComponentType<T>> builderSupplier) {
         return DATA_COMPONENT_REGISTER.register(name, builderSupplier);
