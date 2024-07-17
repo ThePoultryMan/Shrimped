@@ -16,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class ShrimpModel extends EntityModel<Shrimp> {
     private final ModelPart root;
-    private ModelPart hair;
+    private final ModelPart hair;
     private final ModelPart legsl;
     private final ModelPart legsr;
     private final ModelPart back;
