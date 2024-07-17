@@ -18,7 +18,7 @@ public class EntityRegistry {
 
     public static final RegistrySupplier<EntityType<Shrimp>> SHRIMP_ENTITY_TYPE = register(
             "shrimp",
-            EntityType.Builder.of(Shrimp::new, MobCategory.WATER_CREATURE),
+            EntityType.Builder.of(Shrimp::new, MobCategory.WATER_CREATURE).eyeHeight(0.09375f),
             Shrimp::getShrimpAttributes);
 
     public static void registerEntities() {
