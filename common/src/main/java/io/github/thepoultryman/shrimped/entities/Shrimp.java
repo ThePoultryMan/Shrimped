@@ -3,6 +3,8 @@ package io.github.thepoultryman.shrimped.entities;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.level.Level;
 
 public class Shrimp extends PathfinderMob {
@@ -11,6 +13,6 @@ public class Shrimp extends PathfinderMob {
     }
 
     public static AttributeSupplier.Builder getShrimpAttributes() {
-        return AttributeSupplier.builder();
+        return WaterAnimal.createMobAttributes().add(Attributes.MAX_HEALTH, 5);
     }
 }
