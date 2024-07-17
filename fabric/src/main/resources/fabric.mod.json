@@ -15,6 +15,9 @@
   "entrypoints": {
     "main": [
       "io.github.thepoultryman.shrimped.fabric.ShrimpedFabric"
+    ],
+    "client": [
+      "io.github.thepoultryman.shrimped.fabric.ShrimpedClientFabric"
     ]
   },
   "mixins": [
