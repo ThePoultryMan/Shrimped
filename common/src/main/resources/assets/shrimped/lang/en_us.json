@@ -1,5 +1,6 @@
 {
+    "block.shrimped.tank": "Tank",
     "item.shrimped.shrimp_bin": "Shrimp Bin",
     "item.shrimped.tank": "Tank",
-    "block.shrimped.tank": "Tank"
+    "tag.item.shrimped.tank_glasses": "Tank Glass"
 }
