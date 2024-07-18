@@ -2,5 +2,6 @@
     "block.shrimped.tank": "Tank",
     "item.shrimped.shrimp_bin": "Shrimp Bin",
     "item.shrimped.tank": "Tank",
+    "shrimped.item.tooltip": "Contains %d/5 Shrimp",
     "tag.item.shrimped.tank_glasses": "Tank Glass"
 }
