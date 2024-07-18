@@ -31,9 +31,9 @@ public class Shrimp extends AbstractSchoolingFish {
         ItemStack itemInHand = player.getItemInHand(interactionHand);
         if (itemInHand.is(ItemRegistry.SHRIMP_BIN.get())) {
             if (!this.level().isClientSide()) {
-                DataComponentRegistry.ShrimpBinCount countComponent = itemInHand.getComponents().get(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get());
-                if (countComponent != null) {
-                    countComponent.setCount(countComponent.getCount() + 1);
+                Integer countComponent = itemInHand.getComponents().get(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get());
+                if (countComponent != null && countComponent <= 5) {
+                    itemInHand.set(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get(), countComponent + 1);
                     return InteractionResult.SUCCESS;
                 }
             }

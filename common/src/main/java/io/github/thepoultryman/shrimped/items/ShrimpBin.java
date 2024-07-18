@@ -9,11 +9,11 @@ import java.util.List;
 
 public class ShrimpBin extends AbstractShrimpedItem {
     public ShrimpBin() {
-        super(new Properties().stacksTo(1).component(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get(), new DataComponentRegistry.ShrimpBinCount(0)));
+        super(new Properties().stacksTo(1).component(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get(), 0));
     }
 
     @Override
     public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
-        list.add(Component.translatable("shrimped.item.tooltip", this.getComponent(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get()).getCount()));
+        list.add(Component.translatable("shrimped.item.tooltip", itemStack.getOrDefault(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get(), "?")));
     }
 }
