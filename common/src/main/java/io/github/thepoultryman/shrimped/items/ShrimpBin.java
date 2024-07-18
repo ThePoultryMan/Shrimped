@@ -14,6 +14,6 @@ public class ShrimpBin extends AbstractShrimpedItem {
 
     @Override
     public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
-        list.add(Component.translatable("shrimped.item.tooltip", itemStack.getOrDefault(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get(), "?")));
+        this.addTooltipLine(list, "shrimped.item.tooltip", itemStack.getOrDefault(DataComponentRegistry.SHRIMP_BIN_COUNT_COMPONENT.get(), "?"));
     }
 }
